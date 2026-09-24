@@ -1,0 +1,31 @@
+# Local environment and credentials
+.env
+!.env.example
+**/.env
+!**/.env.example
+**/*.pem
+**/*-key.json
+**/credentials*.json
+
+# Python environments and generated files
+**/.venv/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.ruff_cache/
+**/.ty/
+**/.adk/
+**/.google-agents-cli/
+**/artifacts/
+
+# Terraform state and local overrides
+**/.terraform/
+**/*.tfstate
+**/*.tfstate.*
+**/my_env.tfvars
+
+# OS/editor files
+.DS_Store
+**/.DS_Store
+.vscode/*
+!.vscode/settings.json
