@@ -37,3 +37,12 @@ agents-cli playground
 
 See the agent-specific [README](./agents/northgate-market-analyst/README.md)
 for deployment and evaluation commands.
+
+## Companies House MCP service
+
+Challenge 2 adds a separate service at
+[`services/companies-house-mcp`](./services/companies-house-mcp). It exposes
+exactly two audited tools over streamable HTTP: an advanced company search and a
+single-company details lookup. The service reads
+`COMPANIES_HOUSE_API_KEY` only from its runtime environment; no key belongs in
+this repository.

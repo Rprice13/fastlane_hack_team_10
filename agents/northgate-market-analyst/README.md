@@ -39,6 +39,9 @@ cp .env.example .env
 Set `GOOGLE_CLOUD_PROJECT` to a project you are authorised to use. The `.env`
 file is ignored by Git; never commit it or any credentials.
 
+When the Companies House MCP server is deployed, set
+`COMPANIES_HOUSE_MCP_URL` to its Cloud Run URL. Never commit credentials.
+
 ## Quick Start
 
 Install `agents-cli` and its skills if not already installed:
@@ -63,6 +66,12 @@ Test the agent interactively with a local web server:
 
 ```bash
 agents-cli playground
+```
+
+With the MCP URL configured, try:
+
+```text
+How many active veterinary businesses are registered in Bristol, and who are the main ones?
 ```
 
 You can also use features from the [ADK](https://adk.dev/) CLI with `uv run adk`.
